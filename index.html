@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Resume Generator</title>
+  </head>
+  <body>
+    <!-- ================cv form================== -->
+    <div class="containers" id="cv-form">
+      <div class="title">
+        <h1 class="lg-heading transition">Resume Generator</h1>
+        <p>by Muhammad Farhan</p>
+      </div>
+      <div class="main-container">
+        <div class="left">
+          <h2 class="md-heading">Personal Information</h2>
+          <label for="nameField" class="set-label">Your Name</label>
+          <input
+            type="text"
+            name=""
+            id="nameField"
+            placeholder="Enter Name Here"
+          />
+
+          <label for="contactField" class="set-label">Your Contact</label>
+          <input
+            type="text"
+            name=""
+            id="contactField"
+            placeholder="Enter Phone Here"
+          />
+
+          <label for="addressField" class="set-label">Your Address</label>
+          <textarea
+            name=""
+            id="addressField"
+            placeholder="Enter Address Here"
+          ></textarea>
+          <div class="form-group pictureField">
+            <label for="imageField" class="set-label"
+              >Choose Your Picture</label
+            >
+            <input type="file" id="imageField" />
+          </div>
+
+          <h4>Important Links</h4>
+          <label for="fbField" class="set-label">Facebook</label>
+          <input
+            type="text"
+            name=""
+            id="fbField"
+            placeholder="Enter Facebook Link Here"
+          />
+
+          <label for="instaField" class="set-label">Instagram</label>
+          <input
+            type="text"
+            name=""
+            id="instaField"
+            placeholder="Enter Instagram Link Here"
+          />
+
+          <label for="linkedField" class="set-label">Linkedin</label>
+          <input
+            type="text"
+            name=""
+            id="linkedField"
+            placeholder="Enter Linkedin Link Here"
+          />
+        </div>
+        <div class="right">
+          <h2 class="md-heading">Professional Information</h2>
+          <label for="objectiveField" class="set-label">Objective</label>
+          <textarea
+            placeholder="Enter here"
+            class="form-control"
+            id="objectiveField"
+          ></textarea>
+
+          <div class="form-group" id="we">
+            <label for="" class="set-label">Work Experience</label>
+            <textarea
+              placeholder="Enter here"
+              class="form-control weField"
+            ></textarea>
+            <div class="right1st-button" id="weAddButton">
+              <input
+                type="button"
+                value="add"
+                class="btn btn-primary btn-sm"
+                onclick="addNewWEField()"
+              />
+            </div>
+          </div>
+
+          <div class="form-group" id="aq">
+            <label for="" class="set-label">Academic Qualification</label>
+            <textarea
+              placeholder="Enter here"
+              class="form-control aqField"
+            ></textarea>
+            <div class="right2nd-button" id="aqAddButton">
+              <input
+                type="button"
+                value="add"
+                class="btn btn-primary btn-sm"
+                onclick="addNewAQField()"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <input type="button" value="Generate CV" onclick="generateCV()" />
+      </div>
+    </div>
+    <!-- =====================cv template============== -->
+    <div class="containers2" id="cv-template">
+      <div class="main-container2">
+        <div class="leftside">
+          <!-- first column -->
+          <img id="imageTemplate" src="" alt="my picture" class="myimage" />
+          <p id="nameT1">Muhammad Farhan</p>
+          <p id="contactT">+929876543210, 1234567890</p>
+          <p id="addressT">
+            House# M200, Street# 74, Muzammil Road Chakiwara Lyari Karachi
+          </p>
+          <hr />
+          <p>
+            <a id="fbT" href="#">https://www.facebook.com/muhammad-farhan</a>
+          </p>
+          <p>
+            <a id="instaT" href="#"
+              >https://www.instagram.com/muhammad-farhan</a
+            >
+          </p>
+          <p>
+            <a id="linkedT" href="#"
+              >https://www.linkedin.com/muhammad-farhan</a
+            >
+          </p>
+        </div>
+        <div class="rightside">
+          <!-- second column -->
+          <h1 id="nameT2" class="lg-heading">Muhammad Farhan</h1>
+          <!-- ===Objective Cards=== -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="md-heading">Objective</h2>
+            </div>
+            <div class="card-body">
+              <p id="objectiveT">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio
+                ex architecto necessitatibus quas, non modi vero nisi commodi
+                minus, mollitia libero ipsa nam voluptatibus corrupti fugit
+                sapiente sequi illo!
+              </p>
+            </div>
+          </div>
+          <!-- ===Work Experience=== -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="md-heading">Work Experience</h2>
+            </div>
+            <div class="card-body">
+              <ul id="weT">
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam, earum!
+                </li>
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam, earum!
+                </li>
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam, earum!
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- ====Academic Qualification==== -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="md-heading">Academic Qualification</h2>
+            </div>
+            <div class="card-body">
+              <ul id="aqT">
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam, earum!
+                </li>
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam, earum!
+                </li>
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam, earum!
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="btn-template">
+            <input type="button" value="Print CV" onclick="printCV()" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
