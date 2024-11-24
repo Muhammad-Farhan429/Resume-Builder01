@@ -14,7 +14,8 @@ body {
 .title {
   text-align: center;
   background-color: blue;
-  border: 8px solid yellow;
+  /* border: 8px solid yellow; */
+  border: 8px solid #03a9f4;
   color: #fff;
   width: 90%;
   margin: 1rem auto;
@@ -66,8 +67,10 @@ p {
 .left .set-label,
 .right .set-label {
   font-size: 1.8rem;
+  font-weight: 600;
   display: block;
   margin-bottom: 0.3rem;
+  color: brown;
 }
 /* label {
     font-size: 1.8rem;
@@ -99,6 +102,7 @@ p {
   border-radius: 0.7rem;
   outline: none;
   border: 3px solid blue;
+  background-color: khaki;
 }
 
 .main-container .right {
@@ -116,12 +120,14 @@ p {
 }
 
 .left textarea:focus {
+  background-color: khaki;
   padding: 0.5rem;
   height: 8rem;
   outline: none;
   border: 3px solid blue;
 }
 .right textarea:focus {
+  background-color: khaki;
   padding: 0.5rem;
   height: 8rem;
   outline: none;
@@ -130,9 +136,9 @@ p {
 .form-control {
   margin-bottom: 0.5rem;
 }
-.pictureField{
+.pictureField {
   margin-top: 1rem;
-} 
+}
 .right input[type="button"] {
   display: block;
   margin: auto;
@@ -141,8 +147,7 @@ p {
   font-size: 1.8rem;
   border-radius: 0.9rem;
   border: 4px solid brown;
-  /* background-color: black; */
-  background-color: #03a9f4;
+  background-color: deepskyblue;
   color: #fff;
   cursor: pointer;
 }
@@ -154,18 +159,16 @@ p {
   font-size: 1.8rem;
   border-radius: 0.9rem;
   border: 4px solid brown;
-  /* background-color: black; */
-  background-color: #03a9f4;
+  background-color: deepskyblue;
   color: #fff;
   cursor: pointer;
 }
-#cv-form {
-}
+
 /* =======================================cv template==================================================== */
 #cv-template {
   display: none;
 }
-.myimage{
+.myimage {
   border-radius: 50%;
   width: 220px;
 }
@@ -232,9 +235,10 @@ hr {
   margin: 1rem auto;
   padding: 0.5em 1.2em;
   font-size: 1.8rem;
-  border-radius: 0.7rem;
+  border-radius: 0.9rem;
   /* background-color: black; */
-  /* color: #fff; */
+  border: 4px solid brown;
+  color: #fff;
   cursor: pointer;
 }
 @keyframes change-bg-color {
@@ -243,11 +247,12 @@ hr {
     background-color: blue;
   }
   to {
-    background-color: salmon;
+    /* background-color: salmon; */
+    background-color: khaki;
   }
 }
 @keyframes trans {
-  font-size: 5rem
+  font-size: 5rem;
   font-weight: 900;
 }
 
@@ -279,7 +284,7 @@ hr {
 @media (min-width: 501px) and (max-width: 768px) {
   html {
     font-size: 55%;
-    background-color: lightpink;
+    background-color: aqua;
   }
   .main-container {
     display: block;
